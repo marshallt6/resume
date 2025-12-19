@@ -7,68 +7,60 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
   
-<body>
-  <header class="site">
-    <nav class="nav">
-      <a class="brand" href="./">TM</a>
-      <div class="navlinks">
+<body class="doc">
+  <header class="top">
+    <div class="wrap">
+      <div class="id">
+        <div class="name">Timothy Marshall</div>
+        <div class="role">Electrical Engineer — Embedded / Automotive / Robotics</div>
+      </div>
+      <nav class="links">
         <a href="projects.html">Projects</a>
         <a href="resume.pdf">Resume</a>
         <a href="https://github.com/marshallt6" target="_blank" rel="noreferrer">GitHub</a>
         <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noreferrer">LinkedIn</a>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
-  <main class="container">
-    <section class="hero card">
-      <h1>Timothy Marshall</h1>
-      <p class="tagline">Electrical Engineer • Embedded Systems • Automotive & Robotics</p>
-      <p class="summary">
-        I’m an electrical engineer with hands-on experience in embedded systems, automotive electronics,
-        and physical system integration. I focus on designing, debugging, and validating real hardware
-        — from microcontroller firmware to vehicle-level systems.
+  <main class="wrap">
+    <section class="sheet">
+      <div class="kicker">1.0 Overview</div>
+      <p class="lead">
+        Hands-on electrical engineer focused on building, debugging, and validating real hardware/software systems:
+        microcontrollers, vehicle networks, sensors, controls, and test setups.
       </p>
 
-      <div class="cta">
-        <a class="button primary" href="projects.html">View Projects</a>
-        <a class="button" href="resume.pdf">Download Resume</a>
+      <div class="rule"></div>
+
+      <div class="grid2">
+        <section>
+          <div class="kicker">2.0 Core Skills</div>
+          <ul class="list">
+            <li>Embedded C/C++, Python, microcontrollers</li>
+            <li>CAN, UART, SPI/I²C, sensors, signal conditioning</li>
+            <li>Debugging: scope/logic analyzer, bring-up, test & validation</li>
+          </ul>
+        </section>
+
+        <section>
+          <div class="kicker">3.0 Featured Work</div>
+          <ul class="list">
+            <li><a href="projects.html">CAN diagnostic / tooling</a></li>
+            <li><a href="projects.html">Embedded sensor controller</a></li>
+            <li><a href="projects.html">Robotics platform integration</a></li>
+          </ul>
+        </section>
       </div>
-      <p class="meta">Portfolio: marshallt6.github.io/timothymarshall</p>
-    </section>
 
-    <section class="grid">
-      <article class="card project">
-        <h2>Embedded / Controls</h2>
-        <p>Microcontrollers, sensors, C/C++, Python, real debugging stories.</p>
-        <a class="textlink" href="projects.html">See projects →</a>
-      </article>
+      <div class="rule"></div>
 
-      <article class="card project">
-        <h2>Automotive / CAN</h2>
-        <p>Diagnostics, comms, test and validation mindset.</p>
-        <a class="textlink" href="projects.html">See projects →</a>
-      </article>
-
-      <article class="card project">
-        <h2>Robotics / Systems</h2>
-        <p>Integration across software + hardware + physical systems.</p>
-        <a class="textlink" href="projects.html">See projects →</a>
-      </article>
+      <div class="kicker">4.0 Contact</div>
+      <p class="mono">Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p class="mono">Portfolio: marshallt6.github.io/timothymarshall</p>
     </section>
   </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <span>© <span id="y"></span> Timothy Marshall</span>
-      <span class="sep">•</span>
-      <a class="textlink" href="mailto:timothy.marshall1546@gmail.com">timothy.marshall1546@gmail.com</a>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
 </body>
+
 
 </html>
