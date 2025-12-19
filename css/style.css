@@ -18,8 +18,8 @@ body{
   margin:0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
   background:
-    radial-gradient(1200px 600px at 12% 0%, color-mix(in srgb, var(--accent) 18%, transparent), transparent 55%),
-    radial-gradient(900px 500px at 92% 18%, color-mix(in srgb, var(--accent2) 16%, transparent), transparent 55%),
+    radial-gradient(1200px 600px at 12% 0%, color-mix(in srgb, var(--accent) 26%, transparent), transparent 56%),
+    radial-gradient(900px 500px at 92% 18%, color-mix(in srgb, var(--accent2) 22%, transparent), transparent 58%),
     var(--bg);
   color: var(--text);
   line-height: 1.55;
@@ -34,7 +34,15 @@ a:hover{ text-decoration: underline; text-underline-offset: 4px; }
   margin: 0 auto;
 }
 
-.site{ position: sticky; top:0; backdrop-filter: blur(10px); background: rgba(255,255,255,0.75); border-bottom: 1px solid var(--border); z-index: 5; }
+.site{
+  position: sticky;
+  top:0;
+  backdrop-filter: blur(10px);
+  background: color-mix(in srgb, var(--accent) 10%, white);
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 22%, rgba(15, 23, 42, 0.10));
+  z-index: 5;
+}
+
 .nav{
   width: min(var(--max), calc(100% - 36px));
   margin: 0 auto;
@@ -64,6 +72,12 @@ a:hover{ text-decoration: underline; text-underline-offset: 4px; }
 }
 .navlinks a:hover{ background: rgba(15,23,42,0.04); text-decoration:none; }
 .navlinks a.active{ color: var(--text); background: rgba(37,99,235,0.10); }
+.navlinks a:hover{
+  background: color-mix(in srgb, var(--accent) 10%, rgba(15,23,42,0.04));
+  text-decoration:none;
+}
+
+
 
 .card{
   background: var(--card);
