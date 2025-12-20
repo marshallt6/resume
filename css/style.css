@@ -173,3 +173,79 @@ main.container{
   .grid{ grid-template-columns: 1fr; }
   h1{ font-size: 30px; }
 }
+
+/* ---------------------------------------
+   Dark Mode (prefers-color-scheme)
+--------------------------------------- */
+@media (prefers-color-scheme: dark) {
+  :root{
+    --bg: #020617;          /* near-black */
+    --text: #e5e7eb;        /* light gray */
+    --muted: #9ca3af;       /* muted gray */
+    --border: rgba(255,255,255,0.10);
+    --card: #020617;
+    --shadow: 0 12px 36px rgba(0,0,0,0.6);
+
+    /* Keep your A2 amber accent */
+    --accent: #d97706;
+    --accent2: #f59e0b;
+  }
+
+  body{
+    background:
+      radial-gradient(1200px 650px at 12% 0%, rgba(217,119,6,0.18), transparent 55%),
+      radial-gradient(900px 520px at 92% 18%, rgba(245,158,11,0.14), transparent 58%),
+      var(--bg);
+  }
+
+  .site{
+    background: rgba(2,6,23,0.92);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .navlinks a{
+    color: var(--muted);
+  }
+  .navlinks a:hover{
+    background: rgba(255,255,255,0.06);
+    color: var(--text);
+  }
+
+  .card{
+    background: rgba(2,6,23,0.96);
+    border-color: rgba(255,255,255,0.10);
+  }
+
+  .button{
+    background: rgba(255,255,255,0.04);
+    color: var(--text);
+    border-color: rgba(255,255,255,0.14);
+  }
+
+  .button:hover{
+    background: rgba(255,255,255,0.08);
+  }
+
+  .button.primary{
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    color: #020617;
+  }
+
+  .footer{
+    background: rgba(2,6,23,0.95);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    color: rgba(229,231,235,0.8);
+  }
+
+  .footer a{
+    color: rgba(229,231,235,0.9);
+  }
+  .footer a:hover{
+    color: var(--accent2);
+  }
+}
+
+
+
+
+
