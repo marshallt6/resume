@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,52 +10,67 @@
 
 <body>
   <header class="site">
-<nav class="nav">
-  <a class="brand" href="./">TM</a>
+    <nav class="nav">
+      <a class="brand" href="./">TM</a>
 
-  <div class="navlinks">
-    <a href="./project.html">Projects</a>
-    <a href="./research.html">Research</a>
-    <a href="./resume.pdf">Resume</a>
-    <a href="https://github.com/marshallt6"
-       target="_blank"
-       rel="noopener">
-      GitHub
-    </a>
-  </div>
-</nav>
-
+      <div class="navlinks">
+        <a href="./project.html">Projects</a>
+        <a href="./research.html">Research</a>
+        <a href="./resume.pdf">Resume</a>
+        <a href="https://github.com/marshallt6" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </nav>
   </header>
 
   <main class="container">
-    <section class="card">
+    <section class="hero card">
       <h1>Projects</h1>
-      <p class="summary">A curated set of builds that show real design, debugging, and validation work.</p>
-
-      <div class="grid">
-        <article class="card project">
-          <h2>CAN-Based Diagnostic Tool</h2>
-          <p>ECU comms, message parsing, bench + vehicle testing, debugging notes.</p>
-          <a class="textlink" href="#">Case study →</a>
-        </article>
-
-        <article class="card project">
-          <h2>Embedded Sensor Controller</h2>
-          <p>MCU firmware, sensor integration, timing issues, and fixes.</p>
-          <a class="textlink" href="#">Case study →</a>
-        </article>
-
-        <article class="card project">
-          <h2>Robotics Platform</h2>
-          <p>System integration: power, control, sensing, software architecture.</p>
-          <a class="textlink" href="#">Case study →</a>
-        </article>
-      </div>
-
-      <p style="margin-top: 18px;">
-        <a class="textlink" href="./">← Back home</a>
+      <p class="summary">
+        A curated set of builds that show real design, debugging, and validation work.
       </p>
     </section>
+
+    <section class="grid">
+      <article class="card project">
+        <h2>Search-and-Rescue System (Senior Capstone — Infinity Labs)</h2>
+        <p>
+          Senior design project focused on system integration, testing, validation,
+          and engineering documentation.
+        </p>
+        <a class="textlink" href="./projects/sar-capstone.html">Case study →</a>
+      </article>
+
+      <article class="card project">
+        <h2>Frame-Off Resto-Mod: 1977 Kawasaki KZ650</h2>
+        <p>
+          Complete teardown and rebuild with emphasis on electrical reliability,
+          wiring/grounding, and mechanical/electrical integration.
+        </p>
+        <a class="textlink" href="./projects/kz650-restomod.html">Case study →</a>
+      </article>
+
+      <article class="card project">
+        <h2>Drivetrain Swap: 1999 Firebird (V6 → 5.7L LT1) <span class="muted">(In progress)</span></h2>
+        <p>
+          Ongoing conversion including planning, wiring integration, subsystem compatibility,
+          and validation approach.
+        </p>
+        <a class="textlink" href="./projects/firebird-lt1.html">Case study →</a>
+      </article>
+
+      <article class="card project">
+        <h2>Personal Robotics Project</h2>
+        <p>
+          Long-term robotics build combining coursework and independent development:
+          integration, control, and debugging.
+        </p>
+        <a class="textlink" href="./projects/personal-robotics.html">Case study →</a>
+      </article>
+    </section>
+
+    <p style="margin-top: 18px;">
+      <a class="textlink" href="./">← Back home</a>
+    </p>
   </main>
 
   <footer class="footer">
@@ -67,5 +83,4 @@
     document.getElementById("y").textContent = new Date().getFullYear();
   </script>
 </body>
-
 </html>
